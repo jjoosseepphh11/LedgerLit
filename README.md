@@ -7,7 +7,7 @@
 [![Zero Cost](https://img.shields.io/badge/Cost-100%25%20Free-brightgreen.svg)](#the-inspiration--philosophy)
 [![Privacy](https://img.shields.io/badge/Privacy-Zero%20External%20Servers-blue.svg)](#privacy--data-sovereignty)
 [![Platform](https://img.shields.io/badge/Platform-Google%20Apps%20Script%20%2B%20Sheets-orange.svg)](#tech-stack)
-[![Mobile](https://img.shields.io/badge/UX-Mobile--First%20PWA-teal.svg)](#features)
+[![Mobile](https://img.shields.io/badge/UX-Mobile--First%20PWA-teal.svg)](#-app-previews)
 
 ---
 
@@ -31,19 +31,48 @@ Most modern finance apps come with friction:
 
 ---
 
+## 📱 App Previews
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Home Dashboard (Light)</b></td>
+      <td align="center"><b>Home Dashboard (Dark)</b></td>
+      <td align="center"><b>Quick Add</b></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="docs/screenshots/01_dashboard.png" width="240" alt="LedgerLit Dashboard Light" /></td>
+      <td align="center"><img src="docs/screenshots/06_dark_mode.png" width="240" alt="LedgerLit Dashboard Dark" /></td>
+      <td align="center"><img src="docs/screenshots/02_quick_add.png" width="240" alt="Quick Add Form" /></td>
+    </tr>
+    <tr>
+      <td align="center"><b>Accounts & Distribution</b></td>
+      <td align="center"><b>Two-Way Debt Tracker</b></td>
+      <td align="center"><b>Monthly & Daily Analytics</b></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="docs/screenshots/04_accounts.png" width="240" alt="Accounts & Distribution" /></td>
+      <td align="center"><img src="docs/screenshots/03_debts.png" width="240" alt="Debt Tracker" /></td>
+      <td align="center"><img src="docs/screenshots/05_analytics.png" width="240" alt="Monthly Trends & Daily Spikes" /></td>
+    </tr>
+  </table>
+</div>
+
+---
+
 ## ✨ Features
 
 ### ⚡ Quick Add (< 5 Seconds)
-- **Big Numeric Keypad:** Designed for one-handed thumb entry on mobile devices (optimized for 360px+ screens).
+- **Big Numeric Keypad & Amount Presets:** Quick `+50`, `+100`, `+200`, `+500`, `+1k` buttons for lightning speed thumb entries.
 - **Instant Category Chips:** Food, Transport, Utilities, Shopping, Entertainment, Health, Education, Salary, and custom tags.
 - **Multi-Account Selector:** Route payments to Cash, e-wallets, Banks, or Savings.
 - **Bulk Add Mode:** Rapidly enter multiple transactions across different dates in one batch.
 
 ### 📊 Visual Dashboard & Analytics
 - **Live Net Balance & Safe-to-Spend:** Real-time visibility into your current money distribution and daily budget limits.
-- **7-Day Spending Curve:** Interactive line chart showing weekly spending momentum.
-- **Daily Spending Chart:** Visual bar distribution of daily spend throughout the current month.
-- **6-Month Cash Flow:** Income vs. Expense comparison bars to track monthly net savings.
+- **7-Day Spending Curve:** Interactive bar/line chart showing weekly spending momentum.
+- **Daily Spending Chart:** Visual distribution of daily spend throughout the current month to catch spikes.
+- **6-Month Cash Flow:** Income vs. Expense comparison bars to track monthly net savings rate.
 - **Category Spending Donut:** Responsive donut chart highlighting where your money goes.
 
 ### 🏦 Multi-Account Management
@@ -66,34 +95,6 @@ Most modern finance apps come with friction:
 ### 📥 Data Portability
 - **Google Keep Import:** Easily import raw transaction notes pasted from Google Keep or text notes.
 - **One-Click CSV Export:** Download your entire transaction ledger anytime.
-
----
-
-## 📱 Mobile-First Experience
-
-LedgerLit is designed primarily as a mobile home-screen web app:
-
-```
-+-----------------------------------+
-| LedgerLit               🔥 7d  ⚙️ |
-| Today, Oct 30                     |
-|                                   |
-| [ LEVEL 4: BUDGET MASTER - 340 XP] |
-| --------------------------------- |
-| Total Balance                     |
-| ₱ 48,250.00                       |
-| Spent Today: ₱ 320.00             |
-|                                   |
-| [ 7-Day Spending Trend Chart ]    |
-|                                   |
-| Accounts:                         |
-| • Cash: ₱ 3,250                   |
-| • GCash: ₱ 12,000                 |
-| • Bank: ₱ 33,000                  |
-|                                   |
-| [ ➕ Quick Add ]   [ 🤝 Debts ]    |
-+-----------------------------------+
-```
 
 ---
 
@@ -175,7 +176,7 @@ Now, LedgerLit opens instantly with a native full-screen feel—no browser addre
 flowchart TD
     subgraph Client ["Client Device (Phone / Desktop)"]
         UI["Vanilla HTML5 / CSS3 / ES6+"]
-        Keypad["Numeric Keypad & Quick Add"]
+        Keypad["Quick Add & Amount Presets"]
         Charts["Chart.js (CDN)"]
         Audio["Web Audio API & Haptics"]
         Storage["LocalStorage (UI Preferences & Cache)"]
