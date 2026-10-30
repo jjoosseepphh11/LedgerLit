@@ -131,8 +131,8 @@ You can deploy your own private instance of LedgerLit using either method below.
 
 ```bash
 # 1. Clone this repository
-git clone https://github.com/jjoosseepphh11/LedgetLit.git
-cd LedgetLit
+git clone https://github.com/jjoosseepphh11/LedgerLit.git
+cd LedgerLit
 
 # 2. Install Google Clasp globally
 npm install -g @google/clasp
