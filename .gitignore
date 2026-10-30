@@ -1,0 +1,18 @@
+# Clasp & secrets
+.clasp.json
+.env
+*.log
+
+# Dependencies
+node_modules/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Private launch & internal agent assets
+docs/LINKEDIN_POST.md
+AGENTS.md
+.agent/
